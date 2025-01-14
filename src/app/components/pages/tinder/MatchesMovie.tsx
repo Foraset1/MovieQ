@@ -39,7 +39,7 @@ const MatchesMovie = ({ movies }: MovieListProps) => {
           <ul className='mt-9 flex flex-col gap-y-1'>
             {movies.map((movie) => (
               <li key={movie.id} className='border-b border-black/30'>
-                <Link href={`/movie/${movie.id}`}>
+                <Link href={`/movie/${movie.id}`} target="_blank">
                   <h3 className='text-lg text-lightBlue'>{movie.title}</h3>
                 </Link>
               </li>
